@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antoine Leurent - Passe Ton Hack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container site-header">
+    <h1>Antoine Leurent - Page Problematiques</h1>
+    <a class="back-link" href="index.html">&larr; Retour accueil equipe</a>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="antoine-p1">
+      <h2 id="antoine-p1">Problematique 1 - Verifier la validite d'une solution</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Contexte : une solution technique semblait correcte mais sans preuve solide. Objectif : tester, confirmer et documenter la validite du resultat obtenu.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Execution du scenario de test defini par l'equipe.</li>
+            <li>Verification des resultats attendus et des ecarts.</li>
+            <li>Repetition du test pour confirmer la reproductibilite.</li>
+            <li>Validation de la preuve finale pour le rendu.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Terminal Linux</li>
+              <li>Script de test interne</li>
+              <li>Tableau de suivi des resultats</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Difficulte : resultats differents selon l'ordre des actions. Correction : protocole de test fixe et verifications systematiques.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Valider une solution demande plusieurs executions controlees.</li>
+              <li>La reproductibilite est un critere central pour une preuve fiable.</li>
+              <li>Une bonne trace de test facilite la defense au jury.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux reutiliser cette logique de validation pour montrer un raisonnement rigoureux, base sur des faits repetables.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Commandes utilisees</h3>
+          <pre><code># Tests et validation
+bash run-check.sh
+cat resultats.txt
+rg "OK|ERREUR" resultats.txt</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/antoine-leurent/p1_01.png" alt="Execution du premier test dans le terminal" />
+              <figcaption>Etape 1 : on voit le premier lancement du test. C'est une preuve du debut de la validation technique.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/antoine-leurent/p1_02.png" alt="Comparaison entre resultats attendus et obtenus" />
+              <figcaption>Etape 2 : on voit la comparaison des resultats. C'est une preuve que les criteres de reussite sont controles.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/antoine-leurent/p1_03.png" alt="Serie de tests repetes pour verifier la stabilite" />
+              <figcaption>Etape 3 : on voit plusieurs tests consecutifs. C'est une preuve de reproductibilite de la solution.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="antoine-p2">
+      <h2 id="antoine-p2">Problematique 2 - Controler la qualite des preuves visuelles</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Contexte : certaines captures n'etaient pas assez explicites. Objectif : garantir des captures lisibles, anonymisees, et reliees aux etapes du travail.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Tri des captures inutiles ou redondantes.</li>
+            <li>Selection des captures montrant chaque etape cle.</li>
+            <li>Redaction de figcaptions precises sans donnee sensible.</li>
+            <li>Validation croisee avec un membre de l'equipe.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Editeur d'images simple</li>
+              <li>Checklist de conformite</li>
+              <li>HTML figure/figcaption</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Difficulte : captures trop chargees visuellement. Correction : recadrage des zones utiles et legends plus directes.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Une capture utile montre un fait technique sans ambiguite.</li>
+              <li>Les legends doivent expliquer la valeur de preuve.</li>
+              <li>La verification croisee limite les oublis avant rendu.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux reutiliser cette approche pour montrer que je sais presenter des resultats techniques de facon claire et securisee.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Commandes utilisees</h3>
+          <pre><code># Controle des captions et des chemins image
+rg "figcaption" antoine-leurent.html
+rg "assets/eleves/antoine-leurent" antoine-leurent.html
+git diff</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/antoine-leurent/p2_01.png" alt="Tri initial des captures avec suppression des doublons" />
+              <figcaption>Etape 1 : on voit le tri des captures. C'est une preuve que seules les preuves pertinentes sont conservees.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/antoine-leurent/p2_02.png" alt="Capture retenue avec zone cle clairement visible" />
+              <figcaption>Etape 2 : on voit une capture cle recadree. C'est une preuve que l'information utile est lisible immediatement.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/antoine-leurent/p2_03.png" alt="Validation finale des legends sans donnees sensibles" />
+              <figcaption>Etape 4 : on voit la validation des legends. C'est une preuve de conformite aux regles de securite et de presentation.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container site-footer">
+    <p>Antoine Leurent - Passe Ton Hack</p>
+  </footer>
+</body>
+</html>

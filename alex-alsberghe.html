@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Alsberghe - Passe Ton Hack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container site-header">
+    <h1>Alex Alsberghe - Page Problematiques</h1>
+    <a class="back-link" href="index.html">&larr; Retour accueil equipe</a>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="alex-p1">
+      <h2 id="alex-p1">Problematique 1 - Identifier un service reseau vulnerable</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Contexte : un challenge reseau expose plusieurs ports sans indication. Objectif : identifier rapidement le service exploitable sans utiliser de donnees sensibles.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Scan initial des ports ouverts pour obtenir la surface d'attaque.</li>
+            <li>Enumeration des versions de services detectes.</li>
+            <li>Test controle des reponses HTTP pour isoler l'entree faible.</li>
+            <li>Validation de l'hypothese avec une preuve reproductible.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Nmap</li>
+              <li>Curl</li>
+              <li>Documentation CVE publique</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Difficulte : trop de ports bruyants au premier scan. Correction : filtrage progressif et priorisation des services web.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Interpreter les retours de scan sans se perdre dans les faux positifs.</li>
+              <li>Relier une version de service a une faille documentee.</li>
+              <li>Documenter une preuve reseau de facon claire et defendable.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux reutiliser cette demarche pour expliquer la priorisation technique et la methode d'investigation en cybersecurite.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Commandes utilisees</h3>
+          <pre><code># Reconnaissance initiale
+nmap -sV cible.example
+curl -I http://cible.example
+nmap --script vuln cible.example</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/alex-alsberghe/p1_01.png" alt="Resultat de scan Nmap affichant les ports ouverts de la cible" />
+              <figcaption>Etape 1 : on voit les ports ouverts identifies. C'est une preuve du point de depart technique de l'analyse.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/alex-alsberghe/p1_02.png" alt="Details de version de service detectes pendant l'enumeration" />
+              <figcaption>Etape 2 : on voit les versions de services. C'est une preuve de l'enumeration necessaire pour cibler une faille.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/alex-alsberghe/p1_03.png" alt="Reponse HTTP montrant le comportement exploitable du service" />
+              <figcaption>Etape 3 : on voit la reponse HTTP observee. C'est une preuve que l'hypothese de vulnerabilite est pertinente.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="alex-p2">
+      <h2 id="alex-p2">Problematique 2 - Stabiliser une resolution de challenge reseau</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Contexte : la premiere solution fonctionnait de maniere intermittente. Objectif : obtenir une methode stable, repetable et presentable.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Reproduction du probleme sur plusieurs tentatives.</li>
+            <li>Comparaison des paquets et temps de reponse.</li>
+            <li>Ajustement des parametres de requete et du timing.</li>
+            <li>Validation finale sur une sequence complete.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Wireshark</li>
+              <li>Curl en mode verbeux</li>
+              <li>Notes de tests comparatifs</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Difficulte : reponses variables selon la charge. Correction : protocole de test reproductible avec fenetres horaires et options stables.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Mesurer avant de corriger evite les changements inutiles.</li>
+              <li>La stabilite d'une solution compte autant que sa reussite ponctuelle.</li>
+              <li>La preuve par comparaison est tres convaincante a l'oral.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux reutiliser ce cas pour montrer ma capacite a diagnostiquer une instabilite et a fiabiliser une solution technique.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Commandes utilisees</h3>
+          <pre><code># Analyse de stabilite
+curl -v http://cible.example/endpoint
+tcpdump -i eth0 host cible.example
+nmap -Pn -p 80,443 cible.example</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/alex-alsberghe/p2_01.png" alt="Serie de tests repetes montrant des reponses incoherentes" />
+              <figcaption>Etape 1 : on voit plusieurs essais avec des ecarts. C'est une preuve de l'instabilite initiale du challenge.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/alex-alsberghe/p2_02.png" alt="Comparaison des paquets reseau dans un analyseur" />
+              <figcaption>Etape 2 : on voit la comparaison de trafic. C'est une preuve utile pour identifier la cause des variations.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/alex-alsberghe/p2_03.png" alt="Execution finale stable de la solution reseau" />
+              <figcaption>Etape 4 : on voit la sequence stable complete. C'est une preuve que la resolution est fiable et reproductible.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container site-footer">
+    <p>Alex Alsberghe - Passe Ton Hack</p>
+  </footer>
+</body>
+</html>

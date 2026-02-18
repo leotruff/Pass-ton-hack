@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Louis Hostelet - Passe Ton Hack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container site-header">
+    <h1>Louis Hostelet - Page Problematiques</h1>
+    <a class="back-link" href="index.html">&larr; Retour accueil equipe</a>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="louis-p1">
+      <h2 id="louis-p1">Problematique 1 - Documenter une methode d'analyse d'outil</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Contexte : plusieurs outils possibles pour un meme challenge. Objectif : produire une documentation claire pour justifier le choix d'outil et la demarche.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Inventaire des outils envisageables.</li>
+            <li>Comparaison des avantages et limites de chaque option.</li>
+            <li>Selection de l'outil principal avec argumentation.</li>
+            <li>Redaction d'une fiche de procedure reproductible.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Tableau comparatif</li>
+              <li>Documentation officielle des outils</li>
+              <li>Editeur Markdown</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Difficulte : informations trop dispersees. Correction : creation d'un format de fiche unique avec sections fixes.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Comparer objectivement les outils evite les choix intuitifs fragiles.</li>
+              <li>Une bonne documentation fait gagner du temps a toute l'equipe.</li>
+              <li>La clarte des preuves compte autant que la technique.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux reutiliser ce travail pour expliquer comment transformer des essais techniques en procedure partageable et convaincante.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Commandes utilisees</h3>
+          <pre><code># Collecte d'information et organisation
+rg --files
+rg "problematique|outil" *.md *.html
+git add README.md</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/louis-hostelet/p1_01.png" alt="Tableau comparatif des outils et criteres d'evaluation" />
+              <figcaption>Etape 1 : on voit le tableau comparatif des outils. C'est une preuve d'analyse methodique avant decision.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/louis-hostelet/p1_02.png" alt="Selection de l'outil principal avec justification" />
+              <figcaption>Etape 3 : on voit le choix final argumente. C'est une preuve que la decision est justifiee techniquement.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/louis-hostelet/p1_03.png" alt="Fiche de procedure documentee pour reproduction" />
+              <figcaption>Etape 4 : on voit la fiche de procedure. C'est une preuve de transferabilite de la methode aux autres membres.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="louis-p2">
+      <h2 id="louis-p2">Problematique 2 - Produire une trace claire des demarches</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Contexte : les notes brutes de tests etaient difficiles a relire. Objectif : transformer les notes en preuve claire, chronologique et exploitable en evaluation.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Tri des captures et suppression des doublons inutiles.</li>
+            <li>Ajout d'une legende normalisee par capture.</li>
+            <li>Liaison de chaque preuve a une etape numerotee.</li>
+            <li>Validation finale de lisibilite avec l'equipe.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Visionneuse d'images</li>
+              <li>Editeur HTML</li>
+              <li>Checklist de preuves</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Difficulte : captions trop courtes au debut. Correction : format impose avec ce qu'on voit, pourquoi preuve, etape associee.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Une preuve doit etre interpretable sans contexte oral.</li>
+              <li>La standardisation des legends eleve la qualite du rendu.</li>
+              <li>Le controle croise en equipe revele vite les zones floues.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux reutiliser cette organisation pour presenter un raisonnement clair, de la tentative initiale jusqu'au resultat valide.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Commandes utilisees</h3>
+          <pre><code># Verification des chemins de captures
+rg "assets/eleves/louis-hostelet" louis-hostelet.html
+rg "figcaption" louis-hostelet.html
+git status</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/louis-hostelet/p2_01.png" alt="Classement des captures par etape de resolution" />
+              <figcaption>Etape 1 : on voit le tri des captures. C'est une preuve que la demarche est ordonnee avant redaction.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/louis-hostelet/p2_02.png" alt="Ajout des legends normalisees sur les captures" />
+              <figcaption>Etape 2 : on voit les legends ajoutees. C'est une preuve que chaque image devient explicite et evaluable.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/louis-hostelet/p2_03.png" alt="Validation finale de la page avec structure complete" />
+              <figcaption>Etape 4 : on voit la page finale validee. C'est une preuve de conformite avant remise.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container site-footer">
+    <p>Louis Hostelet - Passe Ton Hack</p>
+  </footer>
+</body>
+</html>

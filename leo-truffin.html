@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leo Truffin - Passe Ton Hack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container site-header">
+    <h1>Leo Truffin - Page Problematiques</h1>
+    <a class="back-link" href="index.html">&larr; Retour accueil equipe</a>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="leo-p1">
+      <h2 id="leo-p1">Problematique 1 - Organiser un depot propre pour les preuves</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Contexte : centraliser les preuves des challenges dans un depot commun. Objectif : obtenir une structure claire, partageable, et facile a relire en soutenance.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Creation des dossiers standards `assets/eleves/` par membre.</li>
+            <li>Definition d'une convention de nommage des captures (`p1_01.png`, etc.).</li>
+            <li>Mise en place d'une page HTML par eleve avec sections obligatoires.</li>
+            <li>Verification finale des liens et coherence des preuves.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Git et GitHub</li>
+              <li>VS Code</li>
+              <li>HTML5 semantique</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Difficulte : certains noms de fichiers n'etaient pas uniformes. Correction : adoption d'un schema unique par problematique et verification collective.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Structurer un projet web collaboratif avec des conventions strictes.</li>
+              <li>Rendre des preuves lisibles et exploitables pour un evaluateur externe.</li>
+              <li>Identifier vite les erreurs de liens avant livraison.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux reutiliser cette methode pour expliquer la gestion de projet, la qualite documentaire, et la coordination technique d'une equipe.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Commandes utilisees</h3>
+          <pre><code># Initialisation et controle du depot
+git status
+mkdir -p assets/eleves/leo-truffin
+rg --files</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/leo-truffin/p1_01.png" alt="Arborescence du depot avec dossier assets et fichiers HTML de l'equipe" />
+              <figcaption>Etape 1 : on voit l'arborescence du projet. C'est une preuve car la base technique du rendu est bien creee et partagee.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/leo-truffin/p1_02.png" alt="Exemple de convention de nommage des captures p1_01 p1_02" />
+              <figcaption>Etape 2 : on voit la convention `p1_01.png` appliquee. C'est une preuve de standardisation des livrables.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/leo-truffin/p1_03.png" alt="Verification des liens entre index et pages eleves" />
+              <figcaption>Etape 4 : on voit le controle des liens internes. C'est une preuve que la navigation attendue fonctionne.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="leo-p2">
+      <h2 id="leo-p2">Problematique 2 - Consolider la qualite finale avant remise</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Contexte : avant la remise, il faut eviter les erreurs de format. Objectif : verifier conformite HTML/CSS et coherences de contenu sur toutes les pages.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Relecture complete de chaque page eleve.</li>
+            <li>Controle du nombre de titres et de la semantique `header/main/section/footer`.</li>
+            <li>Verification des chemins d'images `assets/eleves/prenom-nom/`.</li>
+            <li>Correction des derniers details de lisibilite CSS.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Ripgrep pour controles rapides</li>
+              <li>Navigateur pour test responsive</li>
+              <li>Checklist projet</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Difficulte : oublis de sections sur certaines pages. Correction : application d'un gabarit unique pour garantir la conformite.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Un audit final evite la majorite des erreurs de rendu.</li>
+              <li>La semantique HTML facilite la lecture du dossier.</li>
+              <li>Une checklist claire accelere la validation equipe.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux reutiliser une demarche qualite orientee verification, utile pour presenter une methode professionnelle de livraison.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Commandes utilisees</h3>
+          <pre><code># Verification des elements obligatoires
+rg "Retour accueil equipe" *.html
+rg "assets/eleves" *.html
+rg "<h1" *.html</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/leo-truffin/p2_01.png" alt="Tableau de verification des exigences avant rendu" />
+              <figcaption>Etape 1 : on voit la checklist de verification. C'est une preuve du controle qualite global du projet.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/leo-truffin/p2_02.png" alt="Extrait de page avec balises semantiques et titres hierarchises" />
+              <figcaption>Etape 2 : on voit la structure semantique et les titres. C'est une preuve de conformite aux consignes HTML.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/leo-truffin/p2_03.png" alt="Controle final de liens et images sur le mini-site" />
+              <figcaption>Etape 3 : on voit la verification des chemins d'images et liens. C'est une preuve de finalisation sans erreur bloquante.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container site-footer">
+    <p>Leo Truffin - Passe Ton Hack</p>
+  </footer>
+</body>
+</html>
