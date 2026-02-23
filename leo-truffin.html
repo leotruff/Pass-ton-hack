@@ -14,20 +14,21 @@
 
   <main class="container">
     <section class="card" aria-labelledby="leo-p1">
-      <h2 id="leo-p1">Problematique 1 - Organiser un depot propre pour les preuves</h2>
+      <h2 id="leo-p1">Problematique 1 - Challenge n20 (EVLang)</h2>
       <div class="section-stack">
         <section>
           <h3>Enonce / Descriptif</h3>
-          <p>Contexte : centraliser les preuves des challenges dans un depot commun. Objectif : obtenir une structure claire, partageable, et facile a relire en soutenance.</p>
+          <p>Le defi EVLang consiste a analyser un langage de programmation special qui fonctionne dans une grille en deux dimensions. Le programme se deplace dans cette grille et utilise une pile et une memoire. L'objectif etait de comprendre son fonctionnement pour trouver le bon mot de passe a entrer afin d'atteindre le drapeau.</p>
         </section>
 
         <section>
           <h3>Resolution</h3>
           <ol>
-            <li>Creation des dossiers standards `assets/eleves/` par membre.</li>
-            <li>Definition d'une convention de nommage des captures (`p1_01.png`, etc.).</li>
-            <li>Mise en place d'une page HTML par eleve avec sections obligatoires.</li>
-            <li>Verification finale des liens et coherence des preuves.</li>
+            <li>Lecture de la documentation EVLang pour comprendre les instructions (pile, memoire, operations, comparaison).</li>
+            <li>Observation de la logique du programme : empilement de nombres, lecture des caracteres en memoire, calculs, puis comparaison.</li>
+            <li>Identification de la condition cle : le resultat de comparaison doit etre egal a 0 pour continuer vers le drapeau.</li>
+            <li>Transformation du probleme en calcul mathematique pour retrouver les bons caracteres.</li>
+            <li>Conversion des valeurs trouvees en lettres via la table ASCII pour obtenir le mot de passe.</li>
           </ol>
         </section>
 
@@ -35,14 +36,13 @@
           <div>
             <h3>Outil(s) / Ressource(s) utilisees</h3>
             <ul>
-              <li>Git et GitHub</li>
-              <li>VS Code</li>
-              <li>HTML5 semantique</li>
+              <li>Documentation du langage EVLang</li>
+              <li>Table ASCII</li>
             </ul>
           </div>
           <div>
             <h3>Difficulte(s) rencontree(s) + correction</h3>
-            <p>Difficulte : certains noms de fichiers n'etaient pas uniformes. Correction : adoption d'un schema unique par problematique et verification collective.</p>
+            <p>Comprendre le fonctionnement en deux dimensions, bien saisir le role de la pile, puis interpreter correctement les instructions de comparaison. La correction a ete de decomposer la logique et de valider chaque etape avant la conversion ASCII.</p>
           </div>
         </section>
 
@@ -50,39 +50,31 @@
           <div>
             <h3>Ce que j'ai appris</h3>
             <ul>
-              <li>Structurer un projet web collaboratif avec des conventions strictes.</li>
-              <li>Rendre des preuves lisibles et exploitables pour un evaluateur externe.</li>
-              <li>Identifier vite les erreurs de liens avant livraison.</li>
+              <li>Comment un programme peut verifier un mot de passe.</li>
+              <li>L'importance de comprendre la logique avant d'essayer au hasard.</li>
+              <li>Comment utiliser la table ASCII pour relier nombres et lettres.</li>
             </ul>
           </div>
           <div>
             <h3>Grand Oral : ce que je peux reutiliser</h3>
-            <p>Je peux reutiliser cette methode pour expliquer la gestion de projet, la qualite documentaire, et la coordination technique d'une equipe.</p>
+            <p>Je peux expliquer comment analyser un programme pour comprendre son fonctionnement, montrer le role des mathematiques en informatique, decrire le principe de pile, et relier cette logique aux methodes de cybersecurite.</p>
           </div>
-        </section>
-
-        <section>
-          <h3>Commandes utilisees</h3>
-          <pre><code># Initialisation et controle du depot
-git status
-mkdir -p assets/eleves/leo-truffin
-rg --files</code></pre>
         </section>
 
         <section>
           <h3>Captures d'ecran commentees</h3>
           <div class="capture-grid">
             <figure>
-              <img src="assets/eleves/leo-truffin/p1_01.png" alt="Arborescence du depot avec dossier assets et fichiers HTML de l'equipe" />
-              <figcaption>Etape 1 : on voit l'arborescence du projet. C'est une preuve car la base technique du rendu est bien creee et partagee.</figcaption>
+              <img src="assets/eleves/leo-truffin/p1_01.png" alt="Presentation du defi EVLang avec la description de l'objectif du challenge" />
+              <figcaption>Etape 1 : on voit la presentation du defi EVLang et l'objectif a atteindre. C'est une preuve du contexte de travail et du but exact de l'analyse.</figcaption>
             </figure>
             <figure>
-              <img src="assets/eleves/leo-truffin/p1_02.png" alt="Exemple de convention de nommage des captures p1_01 p1_02" />
-              <figcaption>Etape 2 : on voit la convention `p1_01.png` appliquee. C'est une preuve de standardisation des livrables.</figcaption>
+              <img src="assets/eleves/leo-truffin/p1_02.png" alt="Interface EVLang en deux dimensions avec grille, pile et memoire" />
+              <figcaption>Etape 2 : on voit l'interface du programme en deux dimensions avec la grille, la pile et la memoire. C'est une preuve de l'environnement technique analyse.</figcaption>
             </figure>
             <figure>
-              <img src="assets/eleves/leo-truffin/p1_03.png" alt="Verification des liens entre index et pages eleves" />
-              <figcaption>Etape 4 : on voit le controle des liens internes. C'est une preuve que la navigation attendue fonctionne.</figcaption>
+              <img src="assets/eleves/leo-truffin/p1_03.png" alt="Analyse du programme EVLang avec empilement, calculs et comparaison" />
+              <figcaption>Etape 3 : on voit l'analyse du programme avec empilement, calculs et comparaison pour valider le mot de passe. C'est une preuve de la demarche de resolution appliquee.</figcaption>
             </figure>
           </div>
         </section>
@@ -90,20 +82,21 @@ rg --files</code></pre>
     </section>
 
     <section class="card" aria-labelledby="leo-p2">
-      <h2 id="leo-p2">Problematique 2 - Consolider la qualite finale avant remise</h2>
+      <h2 id="leo-p2">Problematique 2 - Challenge n15</h2>
       <div class="section-stack">
         <section>
           <h3>Enonce / Descriptif</h3>
-          <p>Contexte : avant la remise, il faut eviter les erreurs de format. Objectif : verifier conformite HTML/CSS et coherences de contenu sur toutes les pages.</p>
+          <p>Reconstituer un message fragmente. Chaque fragment possede un numero. Il faut trier les fragments selon leur indice puis les concatener pour obtenir le message final.</p>
         </section>
 
         <section>
           <h3>Resolution</h3>
           <ol>
-            <li>Relecture complete de chaque page eleve.</li>
-            <li>Controle du nombre de titres et de la semantique `header/main/section/footer`.</li>
-            <li>Verification des chemins d'images `assets/eleves/prenom-nom/`.</li>
-            <li>Correction des derniers details de lisibilite CSS.</li>
+            <li>Separer les fragments a partir de la chaine d'entree.</li>
+            <li>Extraire l'indice et le texte de chaque fragment.</li>
+            <li>Convertir l'indice en entier pour pouvoir trier correctement.</li>
+            <li>Trier les indices dans l'ordre croissant.</li>
+            <li>Concatener les fragments dans le bon ordre pour reconstruire le message.</li>
           </ol>
         </section>
 
@@ -111,14 +104,14 @@ rg --files</code></pre>
           <div>
             <h3>Outil(s) / Ressource(s) utilisees</h3>
             <ul>
-              <li>Ripgrep pour controles rapides</li>
-              <li>Navigateur pour test responsive</li>
-              <li>Checklist projet</li>
+              <li>Python</li>
+              <li>Dictionnaire</li>
+              <li>Fonction `split()`</li>
             </ul>
           </div>
           <div>
             <h3>Difficulte(s) rencontree(s) + correction</h3>
-            <p>Difficulte : oublis de sections sur certaines pages. Correction : application d'un gabarit unique pour garantir la conformite.</p>
+            <p>Bien separer l'indice du texte, gerer le tri correctement, et verifier le format exact de l'entree. La correction a ete de traiter chaque fragment de maniere robuste avant la reconstruction finale.</p>
           </div>
         </section>
 
@@ -126,39 +119,273 @@ rg --files</code></pre>
           <div>
             <h3>Ce que j'ai appris</h3>
             <ul>
-              <li>Un audit final evite la majorite des erreurs de rendu.</li>
-              <li>La semantique HTML facilite la lecture du dossier.</li>
-              <li>Une checklist claire accelere la validation equipe.</li>
+              <li>Manipuler des chaines de caracteres de facon plus rigoureuse.</li>
+              <li>Trier des elements efficacement avec `sorted()`.</li>
+              <li>Reconstituer une information fragmentee par etapes logiques.</li>
             </ul>
           </div>
           <div>
             <h3>Grand Oral : ce que je peux reutiliser</h3>
-            <p>Je peux reutiliser une demarche qualite orientee verification, utile pour presenter une methode professionnelle de livraison.</p>
+            <p>Je peux expliquer comment on reconstruit des donnees fragmentees en cybersecurite et montrer l'importance du tri algorithmique dans la resolution de problemes.</p>
           </div>
         </section>
 
         <section>
-          <h3>Commandes utilisees</h3>
-          <pre><code># Verification des elements obligatoires
-rg "Retour accueil equipe" *.html
-rg "assets/eleves" *.html
-rg "<h1" *.html</code></pre>
+          <h3>Codes utilises</h3>
+          <pre><code># Valeur d'entree : variable input_s
+# Exemple: "2:DEF 1:ABC 3:GHI"
+# Sortie attendue: "ABCDEFGHI"
+
+parts = input_s.strip().split()
+
+fragments = {}
+for p in parts:
+    if ":" not in p:
+        continue
+    idx_str, frag = p.split(":", 1)
+    idx = int(idx_str)
+    fragments[idx] = frag
+
+result = "".join(fragments[i] for i in sorted(fragments))
+print(result)</code></pre>
         </section>
 
         <section>
           <h3>Captures d'ecran commentees</h3>
           <div class="capture-grid">
             <figure>
-              <img src="assets/eleves/leo-truffin/p2_01.png" alt="Tableau de verification des exigences avant rendu" />
-              <figcaption>Etape 1 : on voit la checklist de verification. C'est une preuve du controle qualite global du projet.</figcaption>
+              <img src="assets/eleves/leo-truffin/p2_01.png" alt="Presentation du defi Echo de l'Abime sur la reconstruction de fragments numerotes" />
+              <figcaption>Etape 1 : ce defi consiste a reconstituer un message dont les morceaux ont ete melanges. Chaque fragment possede un numero indiquant sa position. Il faut trier les fragments selon leur indice puis les assembler pour retrouver le message original.</figcaption>
             </figure>
             <figure>
-              <img src="assets/eleves/leo-truffin/p2_02.png" alt="Extrait de page avec balises semantiques et titres hierarchises" />
-              <figcaption>Etape 2 : on voit la structure semantique et les titres. C'est une preuve de conformite aux consignes HTML.</figcaption>
+              <img src="assets/eleves/leo-truffin/p2_02.png" alt="Interface d'interpretation Python avec variable input_s et zone de sortie print" />
+              <figcaption>Etape 2 : cette interface permet d'ecrire et tester le programme Python. L'entree du defi est injectee dans la variable `input_s`, et le code doit traiter cette donnee puis afficher le message reconstruit avec `print()`.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="leo-p3">
+      <h2 id="leo-p3">Problematique 3 - Challenge n7</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Traduire un message en Morse international. Un espace separe les lettres et un caractere "/" separe les mots. Le resultat attendu doit etre affiche en majuscules.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Creer un dictionnaire de correspondance Morse vers lettre.</li>
+            <li>Separer les mots a l'aide du separateur "/".</li>
+            <li>Separer les lettres Morse de chaque mot avec les espaces.</li>
+            <li>Traduire chaque code Morse en caractere lisible.</li>
+            <li>Recomposer la phrase finale dans le bon format.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Python</li>
+              <li>Dictionnaire Morse</li>
+              <li>Fonction `split()`</li>
+              <li>Boucle `for`</li>
+              <li>Manipulation de chaines de caracteres</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>La principale difficulte etait de gerer correctement les separateurs (espaces et "/"), puis de reconstruire les mots avec le bon espacement. La correction a ete de traiter d'abord les mots, puis les lettres, avec un dictionnaire de correspondance stable.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Decoder un message code de facon methodique.</li>
+              <li>Comprendre le principe d'encodage et de decodage.</li>
+              <li>Structurer un parsing texte en plusieurs etapes simples.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux montrer comment un algorithme traduit des signaux en texte lisible, et expliquer l'importance des structures de donnees dans la resolution d'un probleme cyber.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Codes utilises</h3>
+          <pre><code># Valeur d'entree : variable input_s
+# Entree exemple: "... --- .../.--. --- .-. -"
+# Sortie: "SOS PORT"
+
+MORSE = {
+    ".-": "A",   "-...": "B", "-.-.": "C", "-..": "D",  ".": "E",
+    "..-.": "F", "--.": "G",  "....": "H", "..": "I",  ".---": "J",
+    "-.-": "K",  ".-..": "L", "--": "M",   "-.": "N",  "---": "O",
+    ".--.": "P", "--.-": "Q", ".-.": "R",  "...": "S", "-": "T",
+    "..-": "U",  "...-": "V", ".--": "W",  "-..-": "X","-.--": "Y",
+    "--..": "Z",
+    "-----": "0", ".----": "1", "..---": "2", "...--": "3", "....-": "4",
+    ".....": "5", "-....": "6", "--...": "7", "---..": "8", "----.": "9",
+}
+
+s = input_s.strip()
+
+# on split les mots par "/"
+words = [w for w in s.split("/")]
+
+decoded_words = []
+for w in words:
+    letters = [x for x in w.strip().split() if x]  # split par espaces
+    decoded = "".join(MORSE.get(code, "") for code in letters)
+    decoded_words.append(decoded)
+
+print(" ".join(decoded_words).strip())</code></pre>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/leo-truffin/p3_01.png" alt="Presentation du defi de decodage sonar Morse avec regles espaces et slash" />
+              <figcaption>Etape 1 : ce defi demande de traduire un message ecrit en code Morse. Les espaces separent les lettres et le symbole "/" separe les mots. Il faut decoder correctement chaque signal pour obtenir le message final en majuscules.</figcaption>
             </figure>
             <figure>
-              <img src="assets/eleves/leo-truffin/p2_03.png" alt="Controle final de liens et images sur le mini-site" />
-              <figcaption>Etape 3 : on voit la verification des chemins d'images et liens. C'est une preuve de finalisation sans erreur bloquante.</figcaption>
+              <img src="assets/eleves/leo-truffin/p3_02.png" alt="Interface de l'interpreteur Python pour tester le script de decodage Morse" />
+              <figcaption>Etape 2 : cette interface sert a tester le script de decodage Morse. Le message code est fourni dans `input_s`, et le programme doit analyser, traduire puis afficher le texte decode en sortie.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="leo-p4">
+      <h2 id="leo-p4">Problematique 4 - Challenge n10</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Realiser une analyse statique d'un script PowerShell (`sleep.txt`) pour retrouver le nom initial de l'executable malveillant utilise par le rancongiciel.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Ouverture du fichier en lecture seule, sans execution.</li>
+            <li>Recherche des lignes critiques, notamment celles liees au renommage de fichiers.</li>
+            <li>Identification du changement de nom utilise pour dissimuler le programme.</li>
+            <li>Recuperation du nom original avant modification.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Editeur de texte</li>
+              <li>Documentation PowerShell</li>
+              <li>Recherche documentaire complementaire</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>Le script etait long et parfois confus. La correction a ete de proceder ligne par ligne et d'isoler uniquement les instructions utiles a l'enquete.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Un malware peut changer de nom pour passer inapercu.</li>
+              <li>Il ne faut jamais executer un fichier suspect pendant l'analyse.</li>
+              <li>L'analyse statique permet de comprendre un script sans risque direct.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux expliquer comment on analyse un malware et montrer les techniques de dissimulation utilisees par des programmes malveillants.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/leo-truffin/p4_01.png" alt="Description du defi Petite Sieste - Partie 1 avec objectif d'analyse statique PowerShell" />
+              <figcaption>Etape 1 : le defi demande d'analyser un script PowerShell sans l'executer pour retrouver le nom original du programme malveillant. C'est une preuve du contexte et de l'objectif de l'analyse forensique.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/leo-truffin/p4_02.png" alt="Extrait du script avec commande Rename-Item et chaines Base64 a decoder" />
+              <figcaption>Etape 2 : on repere la commande `Rename-Item`, qui renomme le fichier pour le cacher. Le nom etant encode en Base64, il fallait le decoder pour retrouver le vrai binaire.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="leo-p5">
+      <h2 id="leo-p5">Problematique 5 - Challenge n11</h2>
+      <div class="section-stack">
+        <section>
+          <h3>Enonce / Descriptif</h3>
+          <p>Identifier le processus que le rancongiciel tente de desactiver a partir du script PowerShell analyse precedemment.</p>
+        </section>
+
+        <section>
+          <h3>Resolution</h3>
+          <ol>
+            <li>Relecture complete du script avec focus sur les parametres sensibles.</li>
+            <li>Reperage du parametre qui cible un processus specifique.</li>
+            <li>Identification du processus vise : `MsMpEng.exe`.</li>
+            <li>Verification de son role : composant principal de Windows Defender.</li>
+          </ol>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Outil(s) / Ressource(s) utilisees</h3>
+            <ul>
+              <li>Fichier `sleep.txt`</li>
+              <li>Connaissances Windows</li>
+              <li>Recherche sur les processus systeme</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Difficulte(s) rencontree(s) + correction</h3>
+            <p>La difficulte principale etait de bien interpreter les parametres techniques du script. La correction a ete de croiser les informations du script avec la documentation des processus Windows.</p>
+          </div>
+        </section>
+
+        <section class="problem-meta">
+          <div>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+              <li>Les rancongiciels visent souvent la desactivation de l'antivirus.</li>
+              <li>Windows Defender est un composant cle de la defense poste.</li>
+              <li>L'analyse de processus aide a comprendre la strategie d'attaque.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grand Oral : ce que je peux reutiliser</h3>
+            <p>Je peux expliquer comment un virus attaque un systeme et parler des mecanismes de protection essentiels en cybersecurite.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Captures d'ecran commentees</h3>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/leo-truffin/p5_01.png" alt="Description du defi demandant d'identifier le processus cible par le rancongiciel" />
+              <figcaption>Etape 1 : le defi demande d'identifier quel processus est cible par le rancongiciel a partir du script analyse.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/eleves/leo-truffin/p5_02.png" alt="Extrait de code avec la commande et le parametre -n MsMpEng.exe" />
+              <figcaption>Etape 2 : on voit la ligne `./Guide_Utilisateur_v03.pdf.exe -n MsMpEng.exe -k`. Le parametre `-n MsMpEng.exe` montre que le processus cible est `MsMpEng.exe`, et `-k` indique qu'il tente de le tuer (kill).</figcaption>
             </figure>
           </div>
         </section>
