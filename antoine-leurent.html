@@ -6,168 +6,257 @@
   <title>Antoine Leurent - Passe Ton Hack</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <header class="container site-header">
-    <h1>Antoine Leurent - Page Problematiques</h1>
+    <h1>Antoine Leurent - Page Problematique</h1>
     <a class="back-link" href="index.html">&larr; Retour accueil equipe</a>
   </header>
 
   <main class="container">
-    <section class="card" aria-labelledby="antoine-p1">
-      <h2 id="antoine-p1">Problematique 1 - Verifier la validite d'une solution</h2>
+
+    <section class="card">
+      <h2>Présentation</h2>
+      <p>Vous voilà dans la partie d'Antoine LEURENT pour le projet Passe Ton Hack.</p>
+      <p>Durant le projet, j'ai réalisé 3 objectifs :</p>
+      <ul>
+        <li>Expressionnisme</li>
+        <li>Compétition sur la toile</li>
+        <li>Survivant Crescendo</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Problématique 1 – Expressionnisme</h2>
+
       <div class="section-stack">
-        <section>
-          <h3>Enonce / Descriptif</h3>
-          <p>Contexte : une solution technique semblait correcte mais sans preuve solide. Objectif : tester, confirmer et documenter la validite du resultat obtenu.</p>
-        </section>
 
         <section>
-          <h3>Resolution</h3>
-          <ol>
-            <li>Execution du scenario de test defini par l'equipe.</li>
-            <li>Verification des resultats attendus et des ecarts.</li>
-            <li>Repetition du test pour confirmer la reproductibilite.</li>
-            <li>Validation de la preuve finale pour le rendu.</li>
-          </ol>
-        </section>
-
-        <section class="problem-meta">
-          <div>
-            <h3>Outil(s) / Ressource(s) utilisees</h3>
-            <ul>
-              <li>Terminal Linux</li>
-              <li>Script de test interne</li>
-              <li>Tableau de suivi des resultats</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Difficulte(s) rencontree(s) + correction</h3>
-            <p>Difficulte : resultats differents selon l'ordre des actions. Correction : protocole de test fixe et verifications systematiques.</p>
-          </div>
-        </section>
-
-        <section class="problem-meta">
-          <div>
-            <h3>Ce que j'ai appris</h3>
-            <ul>
-              <li>Valider une solution demande plusieurs executions controlees.</li>
-              <li>La reproductibilite est un critere central pour une preuve fiable.</li>
-              <li>Une bonne trace de test facilite la defense au jury.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Grand Oral : ce que je peux reutiliser</h3>
-            <p>Je peux reutiliser cette logique de validation pour montrer un raisonnement rigoureux, base sur des faits repetables.</p>
-          </div>
+          <h3>Description:</h3>
+          <p>
+            Avant de nous confier des tâches plus complexes, les services secrets Velmorasien
+            nous transmettent cette chaîne de caractères énigmatique :
+            <strong>^FLAG\{1Z[i|i]_(R3){1}gE(x)\}$</strong>
+          </p>
         </section>
 
         <section>
-          <h3>Commandes utilisees</h3>
-          <pre><code># Tests et validation
-bash run-check.sh
-cat resultats.txt
-rg "OK|ERREUR" resultats.txt</code></pre>
+          <h3>Résolution</h3>
+          <p>
+            Pour résoudre cette épreuve, j'ai utilisé l'outil d'intelligence artificielle
+            ChatGPT afin d’analyser et simplifier l’expression régulière.
+          </p>
+          <p>
+            Le flag obtenu est : <strong>FLAG{1Zi_R3gEx}</strong>
+          </p>
         </section>
 
         <section>
-          <h3>Captures d'ecran commentees</h3>
+          <h3>Outil utilisé</h3>
+          <ul>
+            <li>ChatGPT</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Preuve visuelle</h3>
           <div class="capture-grid">
             <figure>
-              <img src="assets/eleves/antoine-leurent/p1_01.png" alt="Execution du premier test dans le terminal" />
-              <figcaption>Etape 1 : on voit le premier lancement du test. C'est une preuve du debut de la validation technique.</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/eleves/antoine-leurent/p1_02.png" alt="Comparaison entre resultats attendus et obtenus" />
-              <figcaption>Etape 2 : on voit la comparaison des resultats. C'est une preuve que les criteres de reussite sont controles.</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/eleves/antoine-leurent/p1_03.png" alt="Serie de tests repetes pour verifier la stabilite" />
-              <figcaption>Etape 3 : on voit plusieurs tests consecutifs. C'est une preuve de reproductibilite de la solution.</figcaption>
+              <img src="assets/eleves/antoine-leurent/P1_01.png" alt="Résolution du flag avec ChatGPT" />
+              <figcaption>
+                Capture montrant l'analyse de l'expression régulière et la récupération du flag final.
+              </figcaption>
             </figure>
           </div>
         </section>
+
       </div>
     </section>
 
-    <section class="card" aria-labelledby="antoine-p2">
-      <h2 id="antoine-p2">Problematique 2 - Controler la qualite des preuves visuelles</h2>
+    <section class="card">
+        <h2>Problématique 2 – Compétition sur la toile</h2>
+        <div class="section-stack">
+            <section>
+                <h3>Description:</h3>
+                <p>
+                    Les services de renseignement de la  Velmorasie sont parvenus à mettre la main sur un compte utilisateur d'un  intranet de gestion d'informations d'un groupe de cyberactivistes Poskave. Les utilisateurs de ce système  utilisent celui-ci pour obtenir des informations sur ses ordres actuels et futurs.
+
+Cependant, avec les permissions actuelles du compte récupéré, vous ne trouvez rien d'utile. En utilisant ces identifiants, faites en sorte de récupérer des informations plus intéressantes.
+
+Voici les informations de compte:
+
+Nom d'utilisateur : Roger
+
+Mot de passe : password
+L'intranet du groupe de cyberactivistes est accessible via cette page web.
+
+                </p>
+
+            </section>
+            <section>
+                <h3>Résolution</h3>
+                <p>Pour pouvoir réaliser cette objectif il faut réussir à avoir l'accès au flag mais ceci est possible seulement si on a le rôle de chef.  
+                        <section>
+                <div class="capture-grid">
+                    <figure>
+                        <img src ="assets/eleves/antoine-leurent/P2_01.png" />
+
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <p>
+                    Nous commencons donc cette objectif avec le rôle subordonné. Pour pouvoir changer de rôle il faut cliqué sur demmander une promotion.
+                </p>
+            </section>
+            <section>
+                <div class="capture-grid">
+                    <figure>
+                        <img src ="assets/eleves/antoine-leurent/P2_02.png" />
+
+                    </figure>
+                </div>
+            </section>
+            <secion>
+                <p>
+                    Après avoir cliqué pour pouvoir avoir en continu le rôle de chef, il suffit de rafraichir la page.
+                </p>
+            </secion>
+                        <section>
+                <div class="capture-grid">
+                    <figure>
+                        <img src ="assets/eleves/antoine-leurent/P2_03.png" />
+
+                    </figure>
+                </div>
+            </section>
+            <section>
+              <p>
+                Une fois que la page fut rafraichie, on remarque bien que l'on a obtenu le rôle de chef.
+              </p>
+            </section>
+            <section>
+              <div class="capture-grid">
+                <figure>
+                  <img src ="assets/eleves/antoine-leurent/P2_04.png" />
+
+                </figure>
+              </div>
+            </section>
+            <section>
+              <p>
+                Une fois que l'on a bien obtenu le rôle de chef, il nous suffit plus qu'a se rendre sur la page où se trouve le flag et on, remarque que cette fois ci on a accès au flag est il est bien récupérable.
+              </p>
+            </section>
+        </div>
+    </section>
+    
+    <section class="card">
+      <h2> Problématique 3 – Survivant Crescendo</h2>
       <div class="section-stack">
         <section>
-          <h3>Enonce / Descriptif</h3>
-          <p>Contexte : certaines captures n'etaient pas assez explicites. Objectif : garantir des captures lisibles, anonymisees, et reliees aux etapes du travail.</p>
-        </section>
+          <h3>Description:</h3>
+          <p>
+            Lors d'une mission d'infiltration dans un groupe Polskavien, vous apprenez que tous les membres de ce groupe jouent au dernier jeu à la mode: Survivant Crescendo. Le problème est que personne n'a jamais réussi à finir ce jeu. Prouver que vous avez réussi à battre le dernier boss pourrait améliorer votre réputation au sein du groupe. Pour parfaire votre couverture, vous allez devoir finir le jeu en utilisant tous les moyens nécessaires.
+          </p>
 
+        </section>
         <section>
-          <h3>Resolution</h3>
-          <ol>
-            <li>Tri des captures inutiles ou redondantes.</li>
-            <li>Selection des captures montrant chaque etape cle.</li>
-            <li>Redaction de figcaptions precises sans donnee sensible.</li>
-            <li>Validation croisee avec un membre de l'equipe.</li>
-          </ol>
+          <h3>Résolution:</h3>
+          <p>
+            Le jeu Survivant Crescendo est un jeu dans lequel on doit survivre à des vagues d'ennemis et si il nous touchent alors on perd de la vie. Pour gagner il faut réussir à battre le boss final.
+          </p>
         </section>
-
-        <section class="problem-meta">
-          <div>
-            <h3>Outil(s) / Ressource(s) utilisees</h3>
-            <ul>
-              <li>Editeur d'images simple</li>
-              <li>Checklist de conformite</li>
-              <li>HTML figure/figcaption</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Difficulte(s) rencontree(s) + correction</h3>
-            <p>Difficulte : captures trop chargees visuellement. Correction : recadrage des zones utiles et legends plus directes.</p>
-          </div>
-        </section>
-
-        <section class="problem-meta">
-          <div>
-            <h3>Ce que j'ai appris</h3>
-            <ul>
-              <li>Une capture utile montre un fait technique sans ambiguite.</li>
-              <li>Les legends doivent expliquer la valeur de preuve.</li>
-              <li>La verification croisee limite les oublis avant rendu.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Grand Oral : ce que je peux reutiliser</h3>
-            <p>Je peux reutiliser cette approche pour montrer que je sais presenter des resultats techniques de facon claire et securisee.</p>
-          </div>
-        </section>
-
         <section>
-          <h3>Commandes utilisees</h3>
-          <pre><code># Controle des captions et des chemins image
-rg "figcaption" antoine-leurent.html
-rg "assets/eleves/antoine-leurent" antoine-leurent.html
-git diff</code></pre>
-        </section>
-
-        <section>
-          <h3>Captures d'ecran commentees</h3>
           <div class="capture-grid">
             <figure>
-              <img src="assets/eleves/antoine-leurent/p2_01.png" alt="Tri initial des captures avec suppression des doublons" />
-              <figcaption>Etape 1 : on voit le tri des captures. C'est une preuve que seules les preuves pertinentes sont conservees.</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/eleves/antoine-leurent/p2_02.png" alt="Capture retenue avec zone cle clairement visible" />
-              <figcaption>Etape 2 : on voit une capture cle recadree. C'est une preuve que l'information utile est lisible immediatement.</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/eleves/antoine-leurent/p2_03.png" alt="Validation finale des legends sans donnees sensibles" />
-              <figcaption>Etape 4 : on voit la validation des legends. C'est une preuve de conformite aux regles de securite et de presentation.</figcaption>
+              <img src="assets/eleves/antoine-leurent/P3_01.png" />
             </figure>
           </div>
         </section>
+        <section>
+          <p>
+            Il est aussi possble de gagner des niveaux lorsque l'on bat des énemis, ce qui nous permet d'améliorer des compétences pour nous faciliter la tâche de battre le boss final.
+          </p>
+        </section>
+        <section>
+          <div class="capture-grid">
+            <figure>
+              <img src="assets/eleves/antoine-leurent/P3_02.png" />
+            </figure>
+          </div>
+        </section>
+        <section>
+          <p>
+            Pour pouvoir battre le boss final, il nous est obliger de trouver un moyen de tricher. Pour se faire, j'ai mit le code suivant dans la console du navigateur pour pouvoir nous rendre invincble est assez puissant pour battre le boss final:
+          </p>
+          <p>
+            <strong>
+              game.apply_upgrade('maxHealth', 100000)
+
+            </strong>
+          </p>
+           <p>
+            <strong>
+
+game.apply_upgrade('bassDrop', 10000)
+
+            </strong>
+          </p>
+           <p>
+            <strong>
+
+game.apply_upgrade('arpeggio', 100000)
+            </strong>
+          </p>
+        </section>
+          <section>
+            <div class="capture-grid">
+              <figure>
+                <img src="assets/eleves/antoine-leurent/P3_03.png" />
+              </figure>
+            </div>
+            <section>
+              <p>
+                Une fois le code de triche appliqué, il nous suffit de battre le boss final pour ensuite pouvoir obtenir le flag.
+              </p>
+            </section>
+            <section>
+              <div class="capture-grid">
+                <figure>
+                  <img src="assets/eleves/antoine-leurent/P3_04.png" />
+                </figure>
+              </div>
+              
+              <section>
+                <h3>Outils utilisés</h3>
+                <ul>
+                  <li>Chatgpt</li>
+                  <li>Console du navigateur</li>
+                </ul>
+              </section>
+              <section>
+                <h3>Difficulté rencontrée</h3>
+                <p>
+                  La difficulté que j'ai rencontré pour cette épreuve est de trouver un moyen de tricher pour pouvoir battre le boss final. En effet, le boss final est très puissant et il est quasiment impossible de le battre sans tricher.
+                </p>
+              </section>
+              <section>
+                <h3>Ce que j'ai appris</h3>
+                <p>
+                  J'ai appris comment utiliser la console du navigateur.
+                </p>
+              </section>
+              
       </div>
     </section>
+
   </main>
 
   <footer class="container site-footer">
     <p>Antoine Leurent - Passe Ton Hack</p>
   </footer>
+
 </body>
 </html>
