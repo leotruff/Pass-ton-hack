@@ -251,10 +251,23 @@
           </div>
         </section>
 
-        <section>
+                <section>
           <h3>Commandes utilisees</h3>
-          <pre><code>// Code execute dans la console pour generer les codes
-// (Tu m’envoies ton vrai code et je le remplace ici exactement)</code></pre>
+          <pre><code>for (let i = 0; i < 1000; i++) {
+  let v;
+  try {
+    v = num3(i);
+  } catch (e) {
+    continue;
+  }
+  if (v === 31290) {
+    console.log("✅ num3 input =", i);
+    break;
+  }
+}
+
+const m = await import("./release.js");
+console.log("num4(29) =", m.num4(29));</code></pre>
         </section>
 
         <section>
