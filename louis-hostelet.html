@@ -278,7 +278,91 @@ console.log("num4(29) =", m.num4(29));</code></pre>
         </section>
       </div>
     </section>
+<!-- PROBLEMATIQUE 1 -->
 
+<section class="card" aria-labelledby="louis-p1">
+  <h2 id="louis-p1">Problematique 5 - Challenge n°5</h2>
+  <div class="section-stack">
+    <section>
+      <h3>Enonce / Descriptif</h3>
+      <p>
+        Un cable sous-marin reliant l’Europe aux iles de Starnopol a ete sectionne, ce qui perturbe les communications entre la Velmorasie et le continent.
+        Les autorites soupconnent qu’un navire ait accidentellement ou volontairement coupe ce cable.
+      </p>
+
+      <p>
+        Pour mener l’enquete, nous disposons d’un fichier contenant des trames AIS au format NMEA,
+        qui correspondent aux messages envoyes par les bateaux pour indiquer leur position et leur identite.
+      </p>
+
+      <p>
+        L’objectif est d’analyser ces donnees afin d’identifier le bateau present a proximite du point de rupture
+        au moment de l’incident et de retrouver son identifiant MMSI.
+      </p>
+    </section>
+
+    <section>
+      <h3>Resolution</h3>
+      <ol>
+        <li>Observation du fichier contenant les trames AIS.</li>
+        <li>Compréhension que ces lignes correspondent aux messages envoyes par les bateaux.</li>
+        <li>Utilisation d’un site permettant de decoder les trames NMEA.</li>
+        <li>Recuperation des informations comme la position du bateau, son nom et son MMSI.</li>
+        <li>Comparaison des coordonnees des bateaux avec la zone du cable coupe.</li>
+        <li>Identification du bateau present au moment de l’incident.</li>
+      </ol>
+    </section>
+
+    <section class="problem-meta">
+      <div>
+        <h3>Outil(s) / Ressource(s) utilisees</h3>
+        <ul>
+          <li>Site de decodage AIS : https://www.maritec.co.za/aisvdmvdodecoding</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Difficulte(s) rencontree(s) + correction</h3>
+        <p>
+          La principale difficulte etait de comprendre ce que representaient les trames AIS,
+          car au debut elles ressemblent simplement a des lignes de texte difficiles a interpreter.
+          L’utilisation d’un site de decodage a permis de transformer ces donnees en informations lisibles.
+        </p>
+      </div>
+    </section>
+
+    <section class="problem-meta">
+      <div>
+        <h3>Ce que j'ai appris</h3>
+        <ul>
+          <li>Le fonctionnement du systeme AIS utilise par les bateaux.</li>
+          <li>Les donnees peuvent etre stockees dans des formats techniques comme les trames NMEA.</li>
+          <li>Il faut parfois decoder les donnees pour comprendre les informations qu’elles contiennent.</li>
+          <li>L’analyse de donnees peut permettre de retrouver des informations importantes.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Grand Oral : ce que je peux reutiliser</h3>
+        <p>
+          Cet exemple montre que la cybersécurité concerne aussi les systemes de transport.
+          Les bateaux utilisent des systemes numeriques comme l’AIS pour transmettre leur position
+          et leur identite sous forme de donnees informatiques.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Commandes utilisees</h3>
+      <pre><code>Aucune commande utilisee</code></pre>
+    </section>
+
+    <section>
+      <h3>Captures d'ecran commentees</h3>
+      <div class="capture-grid">
+        <!-- Tu ajouteras tes captures ici -->
+      </div>
+    </section>
+  </div>
+</section>
   </main>
 
   <footer class="container site-footer">
